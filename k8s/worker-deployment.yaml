@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: worker
-          image: stephengrider/multi-worker
+          image: skalloween/multi-worker
           ports:
             - containerPort: 3000
           env:
