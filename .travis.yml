@@ -16,7 +16,7 @@ before_install:
   - gcloud config set compute/zone us-central1-c
   - gcloud container clusters get-credentials multi-cluster
   # docker login
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo "$DOCKER_TOKEN" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t skalloween/react-test -f ./client/Dockerfile.dev ./client
 
 script:
