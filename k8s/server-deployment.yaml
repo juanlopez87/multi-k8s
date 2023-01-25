@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: skalloween/multi-server:v1
+          image: skalloween/multi-server
           ports:
             - containerPort: 5000
           env:
